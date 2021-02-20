@@ -59,7 +59,7 @@
         <div>
           <b-card-group deck>
             <b-card
-              title="คนอร์ ตัพโจ๊ก รสหมูสับ"
+              title="คนอร์ คัพโจ๊ก รสหมูสับ"
               img-src="https://media.allonline.7eleven.co.th/pdmain/125348_00_Knor.jpg"
               img-alt="Image"
               img-top
@@ -75,7 +75,7 @@
             </b-card>
 
             <b-card
-              title="คนอร์ ตัพโจ๊ก รสไข่ฟู-หมูสับ"
+              title="คนอร์ คัพโจ๊ก รสไข่ฟู-หมูสับ"
               img-src="https://fn.lnwfile.com/8g7mbp.png"
               img-alt="Image"
               img-top
@@ -91,8 +91,8 @@
             </b-card>
 
             <b-card
-              title="คนอร์ ตัพโจ๊ก รสไก่"
-              img-src="https://lh3.googleusercontent.com/proxy/1auon4L2EQt2mV6wy2cZF65q7QipYhDZUb_NiliSeZDEfg9SqGWsC4ZSLUST2ruuiBokA7kuMgMthWVuAzHQBx-cCwxOEhzso_Q9gQ"
+              title="คนอร์ คัพโจ๊ก รสไก่"
+              img-src="https://lh3.googleusercontent.com/proxy/01GbEIasia0C1eUK9A8RngFOV0Ltoc33RKOtCNPHZBikrJhirgdQE3dYk7T643Vypk9sgM3MwXIvFWI2djwso4-l8QcxxN58_X86Qg"
               img-alt="Image"
               img-top
             >
