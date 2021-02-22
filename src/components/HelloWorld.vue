@@ -92,7 +92,7 @@
 
             <b-card
               title="คนอร์ คัพโจ๊ก รสไก่"
-              img-src="https://lh3.googleusercontent.com/proxy/01GbEIasia0C1eUK9A8RngFOV0Ltoc33RKOtCNPHZBikrJhirgdQE3dYk7T643Vypk9sgM3MwXIvFWI2djwso4-l8QcxxN58_X86Qg"
+              img-src="https://lh3.googleusercontent.com/proxy/YKdxSnY4W6vHACwQ7Hb0spWTyPxfQ_cDF08tXpuUTjIF_abYcXIIJtpkoIRVvRlNKL3dx9gcNmMxJj_oRWb5rWnm37D4q_e3"
               img-alt="Image"
               img-top
             >
