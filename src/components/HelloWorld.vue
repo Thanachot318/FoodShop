@@ -92,7 +92,7 @@
 
             <b-card
               title="คนอร์ คัพโจ๊ก รสไก่"
-              img-src="https://lh3.googleusercontent.com/proxy/YKdxSnY4W6vHACwQ7Hb0spWTyPxfQ_cDF08tXpuUTjIF_abYcXIIJtpkoIRVvRlNKL3dx9gcNmMxJj_oRWb5rWnm37D4q_e3"
+              img-src="https://shop-api.readyplanet.com/v1/image/500x0/d898852ada084919b9ebc6b880303555"
               img-alt="Image"
               img-top
             >
@@ -120,12 +120,12 @@ export default {
   },
   data() {
     return {
-      like: 0,price1:6,
-      kon: 0,price2:6,
-      moo: 0,price3:8,
-      jmoo: 0,price4:13,
-      egg: 0,price5:15,
-      kit: 0,price6:12,
+      like: 0,
+      kon: 0,
+      moo: 0,
+      jmoo: 0,
+      egg: 0,
+      kit: 0,
       // love: 0,
     };
   },
