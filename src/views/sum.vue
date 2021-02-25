@@ -1,9 +1,11 @@
 <template>
   <div class="home">
-    <h1>จำนวนสินค้าทั้งหมด = {{ totalLike }}</h1>
-    <b-button variant="danger" onClick="javascript:location.reload();">ลบรายการสินค้าทั้งหมด</b-button>
+    <h1>จำนวนสินค้าทั้งหมด = {{ this.$store.state.totalLike }}</h1>
+    <b-button variant="danger" onClick="javascript:location.reload();"
+      >ลบรายการสินค้าทั้งหมด</b-button
+    >
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <Basket @callbackLove="lovelove"/>
+    <!-- <Basket @callbackLove="lovelove" /> -->
   </div>
 </template>
 
@@ -11,21 +13,30 @@
 
 export default {
   name: "Home",
-  components: {
-    
+  components: {},
+  computed:{
+    // totalLike(){
+    //   return this.$store.state.totalLike;
+    // }
+    totalLike() {
+      return this.$store.state.totalLike;
+    },
+    totalLove() {
+      return this.$store.state.totalLove;
+    },
   },
-  data() {
-    return {
-      totalLike:0,
-      totalLove:0
-    };
-  },
+  // data() {
+  //   return {
+  //     totalLike:0,
+  //     totalLove:0
+  //   };
+  // },
   methods:{
     likelike(){
-      this.totalLike++;
+      this.$store.state.totalLike++;
     },
     lovelove(){
-      this.totalLove++;
+      this.$store.state.totalLove++;
     }
   }
 };
