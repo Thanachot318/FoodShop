@@ -37,9 +37,6 @@ export default {
     totalLove(){
       return this.$store.state.totalLove;
     },
-    // ...mapGetters([
-    //   'likelike',
-    // ])
   },
   // data() {
   //   return {

@@ -34,8 +34,8 @@ export default new Vuex.Store({
     },
   },
   mutations: {
-    lovelove() {
-      this.totalLove += 6;
+    lovelove: state => {
+      return state.totalLove += 6;
     },
     lovelove1() {
       this.totalLove += 8;

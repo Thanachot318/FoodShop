@@ -15,9 +15,6 @@ export default {
   name: "Home",
   components: {},
   computed:{
-    // totalLike(){
-    //   return this.$store.state.totalLike;
-    // }
     totalLike() {
       return this.$store.state.totalLike;
     },

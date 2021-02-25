@@ -14,9 +14,7 @@
               <b-card-text> 1 ซอง ราคา 6 บาท </b-card-text>
               <div>
                 <b-button variant="primary" @click="likeClick"
-                  >ซื้อ<b-badge variant="light">{{
-                    like
-                  }}</b-badge></b-button
+                  >ซื้อ<b-badge variant="light">{{ this.$store.state.like }}</b-badge></b-button
                 >
                 <!-- <b-button variant="warning" @click="loveClick"
                   >ยกเลิก<b-badge variant="light">{{ love }}</b-badge></b-button
@@ -33,7 +31,9 @@
               <b-card-text> 1 ซอง ราคา 6 บาท </b-card-text>
               <div>
                 <b-button variant="primary" @click="loveClick"
-                  >ซื้อ<b-badge variant="light">{{ kon }}</b-badge></b-button
+                  >ซื้อ<b-badge variant="light">{{
+                    this.$store.state.kon
+                  }}</b-badge></b-button
                 >
                 <!-- <b-button variant="warning" @click="loveClick"
                   >ยกเลิก<b-badge variant="light">{{ love }}</b-badge></b-button
@@ -50,7 +50,9 @@
               <b-card-text> 1 ซอง ราคา 8 บาท </b-card-text>
               <div>
                 <b-button variant="primary" @click="mooClick"
-                  >ซื้อ<b-badge variant="light">{{ moo }}</b-badge></b-button
+                  >ซื้อ<b-badge variant="light">{{
+                    this.$store.state.moo
+                  }}</b-badge></b-button
                 >
               </div>
             </b-card>
@@ -69,7 +71,9 @@
               <b-card-text> 1 ซอง ราคา 13 บาท </b-card-text>
               <div>
                 <b-button variant="primary" @click="jmooClick"
-                  >ซื้อ<b-badge variant="light">{{ jmoo }}</b-badge></b-button
+                  >ซื้อ<b-badge variant="light">{{
+                    this.$store.state.jmoo
+                  }}</b-badge></b-button
                 >
               </div>
             </b-card>
@@ -83,7 +87,9 @@
               <b-card-text> 1 ซอง ราคา 15 บาท </b-card-text>
               <div>
                 <b-button variant="primary" @click="eggClick"
-                  >ซื้อ<b-badge variant="light">{{ egg }}</b-badge></b-button
+                  >ซื้อ<b-badge variant="light">{{
+                    this.$store.state.egg
+                  }}</b-badge></b-button
                 >
               </div>
             </b-card>
@@ -97,7 +103,9 @@
               <b-card-text> 1 ซอง ราคา 12 บาท </b-card-text>
               <div>
                 <b-button variant="primary" @click="kitClick"
-                  >ซื้อ<b-badge variant="light">{{ kit }}</b-badge></b-button
+                  >ซื้อ<b-badge variant="light">{{
+                    this.$store.state.kit
+                  }}</b-badge></b-button
                 >
               </div>
             </b-card>
@@ -133,24 +141,6 @@ export default {
     kit() {
       return this.$store.state.kit;
     },
-    // likeClick() {
-    //  return this.$store.getters.likeClick;
-    // },
-    // loveClick() {
-    //  return this.$store.mutation.loveClick;
-    // },
-    // mooClick() {
-    //  return this.$store.mutation.mooClick;
-    // },
-    // jmooClick() {
-    //  return this.$store.mutation.jmooClick;
-    // },
-    // eggClick() {
-    //  return this.$store.mutation.eggClick;
-    // },
-    // kitClick() {
-    //  return this.$store.mutation.kitClick;
-    // },
   },
   // data() {
   //   return {
@@ -165,34 +155,34 @@ export default {
   // },
   methods: {
     likeClick() {
-      this.like++,
-        this.$emit("callbackLike", this.like),
-        this.$emit("callbackLove", this.price1);
+      this.$store.state.like++,
+        this.$emit("callbackLike", this.$store.state.like),
+        this.$emit("callbackLove", this.$store.state.price1);
     },
     loveClick() {
-      this.kon++,
-        this.$emit("callbackLike", this.kon),
-        this.$emit("callbackLove", this.price2);
+      this.$store.state.kon++,
+        this.$emit("callbackLike", this.$store.state.kon),
+        this.$emit("callbackLove", this.$store.state.price2);
     },
     mooClick() {
-      this.moo++,
-        this.$emit("callbackLike", this.moo),
-        this.$emit("callbackLove1", this.price3);
+      this.$store.state.moo++,
+        this.$emit("callbackLike", this.$store.state.moo),
+        this.$emit("callbackLove1", this.$store.state.price3);
     },
     jmooClick() {
-      this.jmoo++,
-        this.$emit("callbackLike", this.jmoo),
-        this.$emit("callbackLove2", this.price4);
+      this.$store.state.jmoo++,
+        this.$emit("callbackLike", this.$store.state.jmoo),
+        this.$emit("callbackLove2", this.$store.state.price4);
     },
     eggClick() {
-      this.egg++,
-        this.$emit("callbackLike", this.egg),
-        this.$emit("callbackLove3", this.price5);
+      this.$store.state.egg++,
+        this.$emit("callbackLike", this.$store.state.egg),
+        this.$emit("callbackLove3", this.$store.state.price5);
     },
     kitClick() {
-      this.kit++,
-        this.$emit("callbackLike", this.kit),
-        this.$emit("callbackLove4", this.price6);
+      this.$store.state.kit++,
+        this.$emit("callbackLike", this.$store.state.kit),
+        this.$emit("callbackLove4", this.$store.state.price6);
     },
   },
 };
